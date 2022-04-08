@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+</head>
+   <style>
+      html,body{
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background: #000;
+      }
+      .wrapper{
+        height: 100px;
+        width: 360px;
+        position: relative;
+        border-radius: 10px;
+        cursor: default;
+        animation: animate 1.5s linear infinite;
+      }
+    
+      .display #time{
+        line-height: 85px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+   </style>
+   <body>
+      <div class="wrapper">
+         <div class="display">
+            <div id="time"></div>
+         </div>
+      </div>
+     
+   </body>
+
+   <script src="js.js"></script>
+</html>
